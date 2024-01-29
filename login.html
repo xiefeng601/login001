@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3秒等待页面</title>
+</head>
+<body>
+    登录成功，<span id="myspan">3</span>秒后自动跳转到管理页面
+</body>
+
+
+<script type="text/javascript"> 
+    function getLabel(id) { 
+      return document.getElementById(id); 
+    } 
+    function changeSec() { 
+      //得到myspan值，每秒减一，会进行隐士转换
+      getLabel('myspan').innerText=getLabel('myspan').innerText-1; 
+    }
+    var mytime = setInterval("changeSec()",1000); 
+    //3秒后跳转
+    function tiao() { 
+      clearInterval(mytime); 
+      window.location.href = "./测试2.html";//在当前窗口打开，并刷新该页面。
+    } 
+
+    setTimeout("tiao()",3000); 
+  </script> 
+
+
+
+</html>

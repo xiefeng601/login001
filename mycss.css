@@ -1,0 +1,41 @@
+.box{
+    border:1px solid greenyellow;
+    width: 300px;
+    height:360px;
+    margin:0 auto;
+    margin-top:25vh;
+    border-radius: 5px;
+    
+}
+
+form{
+    text-align: center;
+    padding:40px 0;
+
+}
+input{
+    margin-top: 20px;
+    border-radius: 5px;
+    border:1px solid white;
+    width:200px;
+    height:30px;
+    
+}
+.checkbox{
+    margin-top: 20px;
+    border-radius: 5px;
+    border:1px solid white;
+    width:20px;
+    height:30px;
+}
+.co{
+    color:mediumblue;
+}
+body{
+    background-image: url(图书馆背景.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.submit{
+    background-color: thistle;
+}
